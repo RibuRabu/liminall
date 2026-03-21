@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fi" data-lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liminall | Node</title>
+  <meta
+    name="description"
+    content="Node."
+  >
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="mark" href="/" aria-label="Liminall">
+        <img src="/images/logo.svg" alt="Liminall">
+      </a>
+
+      <nav aria-label="Primary">
+        <a href="/what/">
+          <span lang="fi" data-lang="fi">Mikä tämä on</span>
+          <span lang="en" data-lang="en">What is this</span>
+        </a>
+        <a href="/node/">Node</a>
+        <a href="/support/">
+          <span lang="fi" data-lang="fi">Tuki</span>
+          <span lang="en" data-lang="en">Support</span>
+        </a>
+      </nav>
+
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-set-lang="fi" aria-pressed="true">FI</button>
+        <span>/</span>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main class="threshold">
+      <h1>
+        <span lang="fi" data-lang="fi">Node</span>
+        <span lang="en" data-lang="en">Node</span>
+      </h1>
+      <p class="summary">
+        <span lang="fi" data-lang="fi">Tälle sivulle tulee lyhyt node-kuvaus.</span>
+        <span lang="en" data-lang="en">A short node description will appear here.</span>
+      </p>
+    </main>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    const buttons = document.querySelectorAll("[data-set-lang]");
+
+    function setLang(lang) {
+      root.lang = lang;
+      root.dataset.lang = lang;
+      buttons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
+      });
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => setLang(button.dataset.setLang));
+    });
+  </script>
+</body>
+</html>
