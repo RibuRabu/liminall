@@ -11,41 +11,47 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div class="page">
-    <header class="site-header">
-      <a class="mark" href="/" aria-label="Liminall">
-        <img src="/images/logo.svg" alt="Liminall">
-      </a>
+  <div class="page-shell">
+    <div class="page">
+      <main class="panel">
+        <div class="panel-top">
+          <a class="mark" href="/" aria-label="Liminall">
+            <img src="/images/logo.svg" alt="Liminall">
+          </a>
 
-      <nav aria-label="Primary">
-        <a href="/what/">
-          <span lang="fi" data-lang="fi">Mikä tämä on</span>
-          <span lang="en" data-lang="en">What is this</span>
-        </a>
-        <a href="/node/">Node</a>
-        <a href="/support/">
-          <span lang="fi" data-lang="fi">Tuki</span>
-          <span lang="en" data-lang="en">Support</span>
-        </a>
-      </nav>
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-set-lang="fi" aria-pressed="true">FI</button>
+            <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
 
-      <div class="lang-switch" aria-label="Language switch">
-        <button type="button" data-set-lang="fi" aria-pressed="true">FI</button>
-        <span>/</span>
-        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-      </div>
-    </header>
+        <div class="hero-copy">
+          <h1>
+            <span data-lang="fi">Astutko Liminall-tilaan?</span>
+            <span data-lang="en">Will you enter the Liminall space?</span>
+          </h1>
+          <p class="summary">
+            <span data-lang="fi">Liminall antaa fyysisille esineille digitaalisen osoitteen.</span>
+            <span data-lang="en">Liminall gives physical objects a digital address.</span>
+          </p>
+        </div>
 
-    <main class="threshold">
-      <h1>
-        <span lang="fi" data-lang="fi">Astutko Liminall-tilaan?</span>
-        <span lang="en" data-lang="en">Will you enter the Liminall space?</span>
-      </h1>
-      <p class="summary">
-        <span lang="fi" data-lang="fi">Liminall antaa fyysisille esineille digitaalisen osoitteen.</span>
-        <span lang="en" data-lang="en">Liminall gives physical objects a digital address.</span>
-      </p>
-    </main>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/what/">
+            <span data-lang="fi">Mikä tämä on</span>
+            <span data-lang="en">What is this</span>
+          </a>
+          <a href="/node/">
+            <span data-lang="fi">Node</span>
+            <span data-lang="en">Node</span>
+          </a>
+          <a href="/support/">
+            <span data-lang="fi">Tuki</span>
+            <span data-lang="en">Support</span>
+          </a>
+        </nav>
+      </main>
+    </div>
   </div>
 
   <script>
@@ -55,10 +61,13 @@
     function setLang(lang) {
       root.lang = lang;
       root.dataset.lang = lang;
+
       buttons.forEach((button) => {
         button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
       });
     }
+
+    setLang("fi");
 
     buttons.forEach((button) => {
       button.addEventListener("click", () => setLang(button.dataset.setLang));
