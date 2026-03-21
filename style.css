@@ -1,0 +1,151 @@
+:root {
+  --bg: #08090a;
+  --bg-deep: #050606;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --text: #f0eee7;
+  --muted: rgba(240, 238, 231, 0.58);
+  --max-width: 1180px;
+}
+
+@font-face {
+  font-family: "Rotis";
+  src:
+    local("Rotis"),
+    url("/fonts/Rotis-Regular.woff2") format("woff2"),
+    url("/fonts/Rotis-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: linear-gradient(180deg, #0a0b0c 0%, var(--bg) 58%, var(--bg-deep) 100%);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  font-family: "Rotis", "Times New Roman", serif;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent 0, rgba(255, 255, 255, 0.008) 50%, transparent 100%);
+  opacity: 0.08;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page {
+  width: min(calc(100% - 3rem), var(--max-width));
+  margin: 0 auto;
+  padding: 1.25rem 0 2rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 0.3rem;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+}
+
+.mark img {
+  width: clamp(7rem, 11vw, 9rem);
+  opacity: 0.88;
+}
+
+nav {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+nav a {
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid transparent;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--text);
+  border-color: var(--line-strong);
+}
+
+.threshold {
+  min-height: calc(100vh - 7rem);
+  display: grid;
+  align-content: center;
+  width: min(30rem, 100%);
+  padding: clamp(5rem, 16vh, 10rem) 0 4rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.65rem, 8vw, 5.2rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.summary {
+  width: min(21rem, 100%);
+  margin: 1.35rem 0 0;
+  padding: 0.8rem 0 0;
+  border: 1px solid var(--line);
+  border-width: 1px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .page {
+    width: min(calc(100% - 2rem), var(--max-width));
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .threshold {
+    min-height: auto;
+    width: min(26rem, 100%);
+    padding-top: 6rem;
+  }
+}
