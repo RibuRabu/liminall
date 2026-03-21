@@ -84,8 +84,20 @@ img {
   display: none;
 }
 
-html[data-lang="fi"] [data-lang="fi"],
+html[data-lang="fi"] [data-lang="fi"] {
+  display: inline;
+}
+
 html[data-lang="en"] [data-lang="en"] {
+  display: inline;
+}
+
+html[data-lang="fi"] h1 > [data-lang="fi"],
+html[data-lang="en"] h1 > [data-lang="en"],
+html[data-lang="fi"] .summary > [data-lang="fi"],
+html[data-lang="en"] .summary > [data-lang="en"],
+html[data-lang="fi"] .site-nav a > [data-lang="fi"],
+html[data-lang="en"] .site-nav a > [data-lang="en"] {
   display: inline;
 }
 
