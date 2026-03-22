@@ -156,6 +156,8 @@ html[data-lang="en"] .summary > [data-lang="en"] {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
+  width: min(35rem, 100%);
+  margin-inline: auto;
 }
 
 .mark {
@@ -204,7 +206,8 @@ html[data-lang="en"] .summary > [data-lang="en"] {
 }
 
 .hero-copy {
-  width: min(31rem, 100%);
+  width: min(34rem, 100%);
+  margin-inline: auto;
 }
 
 h1 {
@@ -217,7 +220,8 @@ h1 {
 }
 
 .summary {
-  width: min(22rem, 100%);
+  width: 100%;
+  max-width: 34rem;
   margin: 1.2rem 0 0;
   color: var(--muted);
   line-height: 1.58;
@@ -228,6 +232,8 @@ h1 {
   align-items: center;
   gap: 1.2rem;
   flex-wrap: wrap;
+  width: min(35rem, 100%);
+  margin-inline: auto;
   padding-top: 1rem;
   border-top: 1px solid var(--line);
   font-size: 0.8rem;
