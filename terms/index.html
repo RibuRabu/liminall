@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fi" data-lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liminall | Käyttöehdot</title>
+  <meta
+    name="description"
+    content="Liminall Node -järjestelmän käyttöehdot ja periaatteet."
+  >
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="page">
+      <main class="panel">
+        <div class="panel-top">
+          <a class="mark" href="/" aria-label="Liminall">
+            <img src="/images/logo.svg" alt="Liminall">
+          </a>
+
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-set-lang="fi" aria-pressed="true">FI</button>
+            <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <h1>
+            <span data-lang="fi">Käyttöehdot</span>
+            <span data-lang="en">Terms</span>
+          </h1>
+
+          <p class="summary">
+            <span data-lang="fi">Liminall Node on fyysinen tunniste, joka avaa omistajan määrittelemän digitaalisen sisällön. Omistaja vastaa sisällöstä.</span>
+            <span data-lang="en">Liminall Node is a physical marker that opens digital content defined by the owner. The owner is responsible for the content.</span>
+          </p>
+
+          <p class="summary">
+            <span data-lang="fi">Liminall pidättää oikeuden poistaa tunniste käytöstä ilman ennakkoilmoitusta, jos käyttö rikkoo järjestelmän periaatteita.</span>
+            <span data-lang="en">Liminall reserves the right to disable a marker without prior notice if its use violates system principles.</span>
+          </p>
+
+          <p class="summary">
+            <span data-lang="fi">Käytöstä poistaminen ei oikeuta hyvitykseen.</span>
+            <span data-lang="en">Disabling does not entitle the owner to a refund.</span>
+          </p>
+
+          <p class="summary">
+            <span data-lang="fi">Järjestelmän tarkoituksen vastaiseksi katsotaan käyttö, joka sisältää lainvastaista, harhaanjohtavaa, haitallista tai toista henkilöä vahingoittavaa sisältöä.</span>
+            <span data-lang="en">Use contrary to the purpose of the system includes content that is unlawful, misleading, harmful, or damaging to another person.</span>
+          </p>
+
+          <p class="summary">
+            <span data-lang="fi">Tähän sisältyy muun muassa väärän omistajuuden esittäminen, huijaus, häirintä, vihapuhe tai yritys ohjata käyttäjä harhaan.</span>
+            <span data-lang="en">This includes, for example, false claims of ownership, fraud, harassment, hate speech, or attempts to mislead users.</span>
+          </p>
+
+          <p class="summary">
+            <span data-lang="fi">Liminall ei takaa jatkuvaa saatavuutta eikä vastaa sisällön käytöstä aiheutuvista seurauksista.</span>
+            <span data-lang="en">Liminall does not guarantee continuous availability and is not responsible for consequences arising from the use of the content.</span>
+          </p>
+
+          <p class="summary">
+            <span data-lang="fi">Palvelua voidaan muuttaa, rajoittaa tai lopettaa ilman erillistä ilmoitusta.</span>
+            <span data-lang="en">The service may be changed, restricted, or discontinued without separate notice.</span>
+          </p>
+
+          <p class="summary">
+            <span data-lang="fi">Yhteydenotot: hello@liminall.fi</span>
+            <span data-lang="en">Contact: hello@liminall.fi</span>
+          </p>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/">
+            <span data-lang="fi">Etusivu</span>
+            <span data-lang="en">Home</span>
+          </a>
+          <a href="/what/">
+            <span data-lang="fi">Mikä tämä on</span>
+            <span data-lang="en">What is this</span>
+          </a>
+          <a href="/node/">
+            <span data-lang="fi">Node</span>
+            <span data-lang="en">Node</span>
+          </a>
+          <a href="/support/">
+            <span data-lang="fi">Tuki</span>
+            <span data-lang="en">Support</span>
+          </a>
+          <a href="/terms/">
+            <span data-lang="fi">Ehdot</span>
+            <span data-lang="en">Terms</span>
+          </a>
+        </nav>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    const buttons = document.querySelectorAll("[data-set-lang]");
+
+    function setLang(lang) {
+      root.lang = lang;
+      root.dataset.lang = lang;
+      buttons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
+      });
+    }
+
+    setLang("fi");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => setLang(button.dataset.setLang));
+    });
+  </script>
+</body>
+</html>
