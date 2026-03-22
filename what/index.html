@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="fi" data-lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liminall | Mikä tämä on</title>
-  <meta
-    name="description"
-    content="Mikä tämä on."
-  >
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liminall – Mikä tämä on</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
+
 <body>
-  <div class="page">
-    <header class="site-header">
-      <a class="mark" href="/" aria-label="Liminall">
-        <img src="/images/logo.svg" alt="Liminall">
-      </a>
+  <div class="page-shell">
+    <main class="page">
+      <section class="panel">
 
-      <nav aria-label="Primary">
-        <a href="/what/">
-          <span lang="fi" data-lang="fi">Mikä tämä on</span>
-          <span lang="en" data-lang="en">What is this</span>
-        </a>
-        <a href="/node/">Node</a>
-        <a href="/support/">
-          <span lang="fi" data-lang="fi">Tuki</span>
-          <span lang="en" data-lang="en">Support</span>
-        </a>
-      </nav>
+        <div class="panel-top">
+          <div class="logo">Liminall</div>
+          <button id="lang-toggle">FI / EN</button>
+        </div>
 
-      <div class="lang-switch" aria-label="Language switch">
-        <button type="button" data-set-lang="fi" aria-pressed="true">FI</button>
-        <span>/</span>
-        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-      </div>
-    </header>
+        <div class="content">
 
-    <main class="threshold">
-      <h1>
-        <span lang="fi" data-lang="fi">Mikä tämä on</span>
-        <span lang="en" data-lang="en">What is this</span>
-      </h1>
-      <p class="summary">
-        <span lang="fi" data-lang="fi">Tälle sivulle tulee lyhyt kuvaus Liminallista.</span>
-        <span lang="en" data-lang="en">A short description of Liminall will appear here.</span>
-      </p>
+          <h1>
+            <span data-lang="fi">Mikä tämä on</span>
+            <span data-lang="en">What is this</span>
+          </h1>
+
+          <p>
+            <span data-lang="fi">
+              Liminall Node liittää kohteen suoraan verkkoon.
+            </span>
+            <span data-lang="en">
+              Liminall Node connects a target directly to the web.
+            </span>
+          </p>
+
+          <p>
+            <span data-lang="fi">
+              Kosketus avaa yhteyden ilman sovellusta tai kirjautumista.
+            </span>
+            <span data-lang="en">
+              A touch opens the connection without an app or login.
+            </span>
+          </p>
+
+          <p>
+            <span data-lang="fi">
+              Yhteys avaa kohteen oman sivun.
+            </span>
+            <span data-lang="en">
+              The connection opens the target’s own page.
+            </span>
+          </p>
+
+        </div>
+
+      </section>
     </main>
   </div>
 
   <script>
-    const root = document.documentElement;
-    const buttons = document.querySelectorAll("[data-set-lang]");
+    const btn = document.getElementById("lang-toggle");
 
-    function setLang(lang) {
-      root.lang = lang;
-      root.dataset.lang = lang;
-      buttons.forEach((button) => {
-        button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
-      });
-    }
-
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => setLang(button.dataset.setLang));
-    });
+    btn.onclick = () => {
+      const current = document.documentElement.getAttribute("data-lang");
+      const next = current === "fi" ? "en" : "fi";
+      document.documentElement.setAttribute("data-lang", next);
+    };
   </script>
 </body>
 </html>
