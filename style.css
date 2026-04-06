@@ -152,6 +152,10 @@ html[data-lang="en"] .hero-copy > p > [data-lang="en"] {
   -webkit-backdrop-filter: blur(28px) saturate(140%);
 }
 
+.panel:has(.pricing-cluster) {
+  gap: 0;
+}
+
 .panel::before {
   content: "";
   position: absolute;
@@ -220,6 +224,10 @@ html[data-lang="en"] .hero-copy > p > [data-lang="en"] {
 .hero-copy {
   width: min(34rem, 100%);
   margin-inline: auto;
+}
+
+.panel:has(.pricing-cluster) > .hero-copy {
+  margin-top: clamp(1.8rem, 4vh, 2.5rem);
 }
 
 h1 {
