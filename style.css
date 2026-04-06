@@ -292,9 +292,6 @@ h1 {
 }
 
 .hero-copy > .price-line {
-  margin-top: 2.35rem;
-  padding-top: 0.95rem;
-  border-top: 1px solid var(--line);
   color: var(--text);
   font-weight: 400;
   line-height: 1.4;
@@ -302,10 +299,8 @@ h1 {
 }
 
 .hero-copy > .inclusion-line {
-  margin-top: 0.3rem;
   color: var(--muted);
   line-height: 1.52;
-  margin-bottom: 0.45rem;
 }
 
 .panel:has(.narrative-block) > .site-nav {
@@ -315,10 +310,6 @@ h1 {
 .pricing-cluster {
   width: 100%;
   max-width: 34rem;
-  margin-top: 1.35rem;
-  padding-top: 0.72rem;
-  margin-bottom: 0.1rem;
-  position: relative;
 }
 
 .pricing-cluster::before {
@@ -326,17 +317,26 @@ h1 {
   display: block;
   width: 100%;
   border-top: 1px solid var(--line);
-  margin-bottom: 0.72rem;
+  margin: 0.72rem 0;
 }
 
-.pricing-cluster > .price-line {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: 0;
+.pricing-cluster > p {
+  margin: 0;
 }
 
-.pricing-cluster > .inclusion-line {
-  margin-bottom: 0;
+.pricing-cluster > .price-line + .inclusion-line {
+  margin-top: 0.3rem;
+}
+
+.panel:not(:has(.pricing-cluster)) > .hero-copy > h2 + .price-line {
+  margin-top: 2.35rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--line);
+}
+
+.panel:not(:has(.pricing-cluster)) > .hero-copy > h2 + .price-line + .inclusion-line {
+  margin-top: 0.3rem;
+  margin-bottom: 0.45rem;
 }
 
 .hero-copy > .inclusion-line + p {
