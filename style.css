@@ -308,17 +308,35 @@ h1 {
   margin-bottom: 0.45rem;
 }
 
-.panel:has(.narrative-block) > .hero-copy > .price-line {
-  margin-top: 1.35rem;
-  padding-top: 0.72rem;
-}
-
-.panel:has(.narrative-block) > .hero-copy > .inclusion-line {
-  margin-bottom: 0.1rem;
-}
-
 .panel:has(.narrative-block) > .site-nav {
   padding-top: 0.7rem;
+}
+
+.pricing-cluster {
+  width: 100%;
+  max-width: 34rem;
+  margin-top: 1.35rem;
+  padding-top: 0.72rem;
+  margin-bottom: 0.1rem;
+  position: relative;
+}
+
+.pricing-cluster::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid var(--line);
+  margin-bottom: 0.72rem;
+}
+
+.pricing-cluster > .price-line {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.pricing-cluster > .inclusion-line {
+  margin-bottom: 0;
 }
 
 .hero-copy > .inclusion-line + p {
