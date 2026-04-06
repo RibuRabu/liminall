@@ -359,11 +359,18 @@ h1 {
   width: min(35rem, 100%);
   margin-inline: auto;
   padding-top: 0;
-  border-top: 1px solid var(--line);
   font-size: 0.8rem;
   letter-spacing: 0.11em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.site-nav::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid var(--line);
+  margin-bottom: 0.7rem;
 }
 
 .site-nav a {
