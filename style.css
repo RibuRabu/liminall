@@ -303,10 +303,6 @@ h1 {
   line-height: 1.52;
 }
 
-.panel:has(.narrative-block) > .site-nav {
-  padding-top: 0.7rem;
-}
-
 .pricing-cluster {
   width: 100%;
   max-width: 34rem;
@@ -317,7 +313,7 @@ h1 {
   display: block;
   width: 100%;
   border-top: 1px solid var(--line);
-  margin: 0.72rem 0;
+  margin: 1rem 0;
 }
 
 .pricing-cluster > p {
@@ -354,7 +350,7 @@ h1 {
   flex-wrap: wrap;
   width: min(35rem, 100%);
   margin-inline: auto;
-  padding-top: 1rem;
+  padding-top: 0;
   border-top: 1px solid var(--line);
   font-size: 0.8rem;
   letter-spacing: 0.11em;
