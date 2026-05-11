@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fi" data-lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liminall | Tilaa</title>
+  <meta name="description" content="Tilaa Liminall Node DIY Kit ja jatka maksamiseen SumUpin kautta.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="page">
+      <main class="panel">
+        <div class="panel-top">
+          <a class="mark" href="/" aria-label="Liminall">
+            <img src="/images/logo.svg" alt="Liminall">
+          </a>
+
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-set-lang="fi" aria-pressed="true">FI</button>
+            <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <h1>
+            <span data-lang="fi">Tilaa</span>
+            <span data-lang="en">Order</span>
+          </h1>
+
+          <p class="summary">
+            <span data-lang="fi">Olet tilaamassa Liminall Node DIY Kitin. Paketti sisältää yhden Node-identiteetin sekä kaksi ohjelmoitua NFC-tunnistetta: julkisen Node-tagin ja omistajan hallinta-avaimen.</span>
+            <span data-lang="en">You are ordering the Liminall Node DIY Kit. The kit includes one Node identity and two programmed NFC tags: a public Node tag and an owner control tag.</span>
+          </p>
+
+          <p class="summary">
+            <span data-lang="fi">Kiinnität tunnisteet itse omaan kohteeseesi. Valmista puista tai muuten viimeisteltyä Node-esinettä ei sisälly. Ei sovellusta. Ei kirjautumista.</span>
+            <span data-lang="en">You attach the tags yourself to your own object. No finished wooden or otherwise completed Node object is included. No app. No login.</span>
+          </p>
+
+          <div class="order-summary">
+            <p class="price-line">
+              <span data-lang="fi">Liminall Node DIY Kit: 20 €</span>
+              <span data-lang="en">Liminall Node DIY Kit: €20</span>
+            </p>
+
+            <p class="inclusion-line">
+              <span data-lang="fi">Sisältää yhden Node-identiteetin, kaksi ohjelmoitua NFC-tunnistetta ja 12 kuukauden ylläpidon.</span>
+              <span data-lang="en">Includes one Node identity, two programmed NFC tags, and 12 months of upkeep.</span>
+            </p>
+
+            <p>
+              <span data-lang="fi">Ensimmäisen vuoden jälkeen ylläpito: 9 € / vuosi / node.</span>
+              <span data-lang="en">After the first year, upkeep: €9 / year / node.</span>
+            </p>
+
+            <p>
+              <span data-lang="fi">Tunnisteet toimitetaan ohjelmoituina. Asiakas kiinnittää ne omaan esineeseensä tai kohteeseensa.</span>
+              <span data-lang="en">The tags are delivered pre-programmed. The customer attaches them to their own object or target item.</span>
+            </p>
+          </div>
+
+          <p class="form-note">
+            <span data-lang="fi">Täytä tilaustiedot alla. Lähetyksen jälkeen siirryt maksamaan SumUpin kautta.</span>
+            <span data-lang="en">Fill in the order details below. After submission, you will continue to payment through SumUp.</span>
+          </p>
+
+          <p class="form-note">
+            <span data-lang="fi">Tilaus käsitellään maksun jälkeen.</span>
+            <span data-lang="en">The order is processed after payment.</span>
+          </p>
+
+          <div class="order-form">
+            <iframe data-tally-src="https://tally.so/embed/oblXdV?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1206" frameborder="0" marginheight="0" marginwidth="0" title="Liminall Node DIY Kit"></iframe>
+          </div>
+
+          <p>
+            <a class="secondary-link" href="/node/">
+              <span data-lang="fi">Takaisin Node-sivulle</span>
+              <span data-lang="en">Back to the Node page</span>
+            </a>
+          </p>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/">
+            <span data-lang="fi">Etusivu</span>
+            <span data-lang="en">Home</span>
+          </a>
+          <a href="/what/">
+            <span data-lang="fi">Mikä tämä on</span>
+            <span data-lang="en">What is this</span>
+          </a>
+          <a href="/node/">
+            <span data-lang="fi">Node</span>
+            <span data-lang="en">Node</span>
+          </a>
+          <a href="/support/">
+            <span data-lang="fi">Tuki</span>
+            <span data-lang="en">Support</span>
+          </a>
+          <a href="/terms/">
+            <span data-lang="fi">Ehdot</span>
+            <span data-lang="en">Terms</span>
+          </a>
+        </nav>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    const buttons = document.querySelectorAll("[data-set-lang]");
+
+    function setLang(lang) {
+      root.lang = lang;
+      root.dataset.lang = lang;
+      buttons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
+      });
+    }
+
+    setLang("fi");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => setLang(button.dataset.setLang));
+    });
+  </script>
+
+  <script>
+    var d = document;
+    var w = "https://tally.so/widgets/embed.js";
+    var v = function () {
+      if (typeof Tally !== "undefined") {
+        Tally.loadEmbeds();
+      } else {
+        d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) {
+          e.src = e.dataset.tallySrc;
+        });
+      }
+    };
+
+    if (typeof Tally !== "undefined") {
+      v();
+    } else if (d.querySelector('script[src="' + w + '"]') == null) {
+      var s = d.createElement("script");
+      s.src = w;
+      s.onload = v;
+      s.onerror = v;
+      d.body.appendChild(s);
+    }
+  </script>
+</body>
+</html>

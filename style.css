@@ -384,6 +384,136 @@ h1 {
   border-color: var(--line-strong);
 }
 
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.56);
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.cta-link:hover,
+.cta-link:focus-visible {
+  background: rgba(255, 255, 255, 0.86);
+  border-color: rgba(255, 255, 255, 0.72);
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  transform: translateY(-1px);
+}
+
+.order-summary,
+.order-form {
+  width: 100%;
+  max-width: 34rem;
+  margin-top: 1.35rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.48),
+    0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.order-summary > :first-child,
+.order-form > :first-child {
+  margin-top: 0;
+}
+
+.order-form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.form-row label {
+  color: var(--text);
+  font-size: 0.94rem;
+  line-height: 1.4;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+  width: 100%;
+  padding: 0.78rem 0.92rem;
+  color: var(--text);
+  font: inherit;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(36, 37, 38, 0.12);
+  border-radius: 14px;
+  outline: none;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 2px 10px rgba(0, 0, 0, 0.04);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease;
+}
+
+.form-row textarea {
+  min-height: 7.5rem;
+  resize: vertical;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: var(--line-strong);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.62),
+    0 0 0 3px rgba(255, 255, 255, 0.22);
+}
+
+.form-note,
+.success-note {
+  width: 100%;
+  max-width: 34rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  line-height: 1.64;
+}
+
+.success-note {
+  color: var(--text);
+}
+
+.secondary-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.secondary-link:hover,
+.secondary-link:focus-visible {
+  color: var(--text);
+  border-color: var(--line-strong);
+}
+
 @media (max-width: 720px) {
   .page-shell {
     padding: 1rem;
@@ -409,5 +539,10 @@ h1 {
 
   .site-nav {
     gap: 0.9rem;
+  }
+
+  .order-summary,
+  .order-form {
+    padding: 0.9rem;
   }
 }
