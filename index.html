@@ -41,9 +41,7 @@
           "@id": "https://liminall.fi/#website",
           "url": "https://liminall.fi/",
           "name": "Liminall",
-          "publisher": {
-            "@id": "https://liminall.fi/#organization"
-          },
+          "publisher": { "@id": "https://liminall.fi/#organization" },
           "inLanguage": ["fi", "en"]
         },
         {
@@ -51,21 +49,15 @@
           "@id": "https://liminall.fi/#webpage",
           "url": "https://liminall.fi/",
           "name": "Liminall | Persistent Digital Identity for Physical Objects",
-          "isPartOf": {
-            "@id": "https://liminall.fi/#website"
-          },
-          "about": {
-            "@id": "https://liminall.fi/#organization"
-          },
+          "isPartOf": { "@id": "https://liminall.fi/#website" },
+          "about": { "@id": "https://liminall.fi/#organization" },
           "description": "Liminall is a physical-digital identity layer for physical objects, surfaces, and spaces. Identity persists while public renderings change over time under owner control.",
           "inLanguage": ["fi", "en"],
           "mainEntity": {
             "@type": "Service",
             "@id": "https://liminall.fi/#service",
             "name": "Liminall Identity Infrastructure",
-            "provider": {
-              "@id": "https://liminall.fi/#organization"
-            },
+            "provider": { "@id": "https://liminall.fi/#organization" },
             "serviceType": "Physical-digital identity infrastructure",
             "description": "Persistent digital identity infrastructure for physical objects, surfaces, and spaces."
           }
@@ -75,257 +67,185 @@
   </script>
 </head>
 <body>
+
+  <div class="nfc-pulse" aria-hidden="true">
+    <div class="nfc-ring"></div>
+    <div class="nfc-ring"></div>
+    <div class="nfc-ring"></div>
+  </div>
+
   <div class="page-shell">
     <div class="page">
       <main class="panel">
+
         <div class="panel-top">
           <a class="mark" href="/" aria-label="Liminall">
             <img src="/images/logo.svg" alt="Liminall">
           </a>
-
           <div class="lang-switch" aria-label="Language switch">
             <button type="button" data-set-lang="fi" aria-pressed="true">FI</button>
             <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
           </div>
         </div>
 
-        <div class="hero-copy">
-          <section class="content-section hero-section">
-            <h1>
-              <span data-lang="fi">Pysyvä digitaalinen identiteetti fyysisille esineille.</span>
-              <span data-lang="en">Persistent digital identity for physical objects.</span>
-            </h1>
-            <p class="lead-line">
-              <span data-lang="fi">Liminall on fyysis-digitaalinen identiteettikerros, joka antaa fyysisille esineille jatkuvuuden, omistajan hallinnan ja julkiset renderöinnit, jotka voivat muuttua ajan myötä.</span>
-              <span data-lang="en">Liminall is a physical-digital identity layer that gives physical objects continuity, owner control, and public renderings that can change over time.</span>
-            </p>
-          </section>
-
-          <section class="content-section definition-section">
-            <h2>
-              <span data-lang="fi">Mikä Liminall on</span>
-              <span data-lang="en">What Liminall Is</span>
-            </h2>
-
-            <p class="summary">
-              <span data-lang="fi">Liminall on fyysis-digitaalinen identiteettikerros fyysisille esineille, pinnoille ja tiloille. Se on fyysisen maailman identiteetti-infrastruktuuri, joka mahdollistaa sen, että esineellä, pinnalla tai tilalla voi olla pysyvä digitaalinen identiteetti omistajan hallinnassa.</span>
-              <span data-lang="en">Liminall is a physical-digital identity layer for physical objects, surfaces, and spaces. It is identity infrastructure for the physical world, allowing an object, surface, or space to hold a persistent digital identity under owner control.</span>
-            </p>
-
-            <p class="summary">
-              <span data-lang="fi">Se, mikä tulee näkyväksi muille, ei ole identiteetti itse vaan sen renderöinti. Renderöinti on esineen identiteetin julkinen ilmentymä, kun taas identiteetti itse säilyy sen alla.</span>
-              <span data-lang="en">What becomes visible to others is not the identity itself, but a rendering of it. A rendering is the public expression of an object’s identity, while the identity itself persists beneath it.</span>
-            </p>
-          </section>
-
-          <section class="content-section continuity-section">
-            <h2>
-              <span data-lang="fi">Identiteetti säilyy. Renderöinnit muuttuvat.</span>
-              <span data-lang="en">Identity persists. Renderings change.</span>
-            </h2>
-
-            <p class="summary">
-              <span data-lang="fi">Fyysistä esinettä ei tarvitse sitoa yhteen pysyvään sivuun, viestiin tai käyttötarkoitukseen. Sama identiteetti voi kantaa eri aikoina eri merkityksiä, näkymiä ja julkisia muotoja.</span>
-              <span data-lang="en">A physical object does not need to be bound to one fixed page, message, or use case. The same identity can carry different meanings, views, and public forms over time.</span>
-            </p>
-
-            <p class="summary">
-              <span data-lang="fi">Jatkuvuus kuuluu esineelle. Näkyvä ilmentymä voi elää sen mukana.</span>
-              <span data-lang="en">Continuity belongs to the object. Its visible expression can evolve with it.</span>
-            </p>
-          </section>
-
-          <section class="content-section renderings-section">
-            <h2>
-              <span data-lang="fi">Yksi identiteettikerros, useita renderöintejä</span>
-              <span data-lang="en">One identity layer, multiple renderings</span>
-            </h2>
-
-            <p class="summary">
-              <span data-lang="fi">Memorial, Lost &amp; Found, Collections, Branded Objects ja Signage ovat renderöintejä, jotka rakentuvat saman identiteettikerroksen päälle. Liminall ei rajoitu yhteen tuoteluokkaan tai yhteen käyttötapaan.</span>
-              <span data-lang="en">Memorial, Lost &amp; Found, Collections, Branded Objects, and Signage are renderings built on the same identity layer. Liminall is not confined to a single product category or a single use case.</span>
-            </p>
-
-            <div class="rendering-list">
-              <section class="rendering-item">
-                <h2>
-                  <span data-lang="fi">Memorial</span>
-                  <span data-lang="en">Memorial</span>
-                </h2>
-                <p class="summary">
-                  <span data-lang="fi">Pysyvä muistamisen, jatkuvuuden ja läsnäolon renderöinti fyysisen esineen, paikan tai pinnan yhteydessä.</span>
-                  <span data-lang="en">A persistent rendering for remembrance, continuity, and presence around a physical object, site, or surface.</span>
-                </p>
-              </section>
-
-              <section class="rendering-item">
-                <h2>
-                  <span data-lang="fi">Lost &amp; Found</span>
-                  <span data-lang="en">Lost &amp; Found</span>
-                </h2>
-                <p class="summary">
-                  <span data-lang="fi">Hallittu julkinen renderöinti palautumista ja yhteydenottoa varten ilman että koko järjestelmä supistuu pelkäksi kadonneiden tavaroiden työkaluksi.</span>
-                  <span data-lang="en">A controlled public rendering for recovery and contact without reducing the system to a lost-item utility.</span>
-                </p>
-              </section>
-
-              <section class="rendering-item">
-                <h2>
-                  <span data-lang="fi">Collections</span>
-                  <span data-lang="en">Collections</span>
-                </h2>
-                <p class="summary">
-                  <span data-lang="fi">Tapa liittää useita esineitä yhteen yhteisen identiteettirakenteen, järjestyksen, provenienssin ja jatkuvuuden kautta.</span>
-                  <span data-lang="en">A way to connect multiple objects through shared identity structure, sequence, provenance, and continuity.</span>
-                </p>
-              </section>
-
-              <section class="rendering-item">
-                <h2>
-                  <span data-lang="fi">Branded Objects</span>
-                  <span data-lang="en">Branded Objects</span>
-                </h2>
-                <p class="summary">
-                  <span data-lang="fi">Brändin hallitsema fyysis-digitaalinen pinta tuotteille, erille, pakkauksille ja pitkäikäisille fyysisille kohtaamispisteille.</span>
-                  <span data-lang="en">A brand-controlled physical-digital surface for products, editions, packaging, and long-lived physical touchpoints.</span>
-                </p>
-              </section>
-
-              <section class="rendering-item">
-                <h2>
-                  <span data-lang="fi">Signage</span>
-                  <span data-lang="en">Signage</span>
-                </h2>
-                <p class="summary">
-                  <span data-lang="fi">Kestävä identiteettipinta julkisille tauluille, opasteille ja informatiivisille fyysisille kohteille, joiden renderöinti voi muuttua ilman että fyysistä muotoa vaihdetaan.</span>
-                  <span data-lang="en">A durable identity surface for public boards, signage, and informational physical objects whose rendering can change without replacing the physical form.</span>
-                </p>
-              </section>
-            </div>
-          </section>
-
-          <section class="content-section node-section">
-            <h2>
-              <span data-lang="fi">Node on yksi pääsyartefakti</span>
-              <span data-lang="en">Node is one access artifact</span>
-            </h2>
-
-            <p class="summary">
-              <span data-lang="fi">Node on yksi fyysinen pääsyartefakti Liminall-järjestelmässä. Se antaa fyysiselle esineelle konkreettisen kosketuspisteen sen identiteettikerrokseen.</span>
-              <span data-lang="en">Node is one physical access artifact within the Liminall system. It gives a physical object a concrete touchpoint into its identity layer.</span>
-            </p>
-
-            <p class="summary">
-              <span data-lang="fi">Node ei ole identiteetti itse, eikä se ole koko järjestelmä. Se on yksi tapa, jolla identiteetistä tulee fyysisesti saavutettava.</span>
-              <span data-lang="en">Node is not the identity itself, and it is not the whole system. It is one way identity becomes physically reachable.</span>
-            </p>
-          </section>
-
-          <section class="content-section process-section">
-            <h2>
-              <span data-lang="fi">Miten Liminall toimii</span>
-              <span data-lang="en">How Liminall works</span>
-            </h2>
-
-            <div class="process-list">
-              <p class="summary">
-                <span data-lang="fi">Fyysiselle esineelle, pinnalle tai tilalle määritetään pysyvä digitaalinen identiteetti.</span>
-                <span data-lang="en">A physical object, surface, or space is assigned a persistent digital identity.</span>
-              </p>
-
-              <p class="summary">
-                <span data-lang="fi">Omistajan hallinta määrittää, mitä identiteetistä tehdään julkiseksi ja missä muodossa se esitetään.</span>
-                <span data-lang="en">Owner control governs what becomes public and in what form it is presented.</span>
-              </p>
-
-              <p class="summary">
-                <span data-lang="fi">Renderöinti tuodaan saataville fyysisen kosketuspisteen tai pääsyartefaktin kautta.</span>
-                <span data-lang="en">A rendering is made available through a physical touchpoint or access artifact.</span>
-              </p>
-
-              <p class="summary">
-                <span data-lang="fi">Renderöinti voi muuttua ajan myötä rikkomatta esineen identiteettiä.</span>
-                <span data-lang="en">The rendering can change over time without breaking the identity of the object.</span>
-              </p>
-
-              <p class="summary">
-                <span data-lang="fi">NFC on yksi pääsytapa järjestelmässä, ei sen määritelmä. Node voi käyttää NFC:tä yhtenä toteutustapana, mutta identiteettikerros ei määräydy käytetyn menetelmän perusteella.</span>
-                <span data-lang="en">NFC is one access method within the system, not the definition of the system itself. Node may use NFC as one implementation method, but the identity layer is not defined by the method of access.</span>
-              </p>
-            </div>
-          </section>
-
-          <section class="content-section persistence-section">
-            <h2>
-              <span data-lang="fi">Miksi pysyvyys on tärkeää</span>
-              <span data-lang="en">Why persistence matters</span>
-            </h2>
-
-            <p class="summary">
-              <span data-lang="fi">Fyysiset esineet elävät usein pidempään kuin niiden ympärille rakennetut tilapäiset digitaaliset kerrokset. Fyysiset esineet kestävät usein pidempään kuin väliaikaiset linkit, kampanjat ja kiinteät digitaaliset sivut.</span>
-              <span data-lang="en">Physical objects often outlast temporary digital layers built around them. Physical objects often outlast temporary links, campaigns, and fixed digital pages.</span>
-            </p>
-
-            <p class="summary">
-              <span data-lang="fi">Liminall on rakennettu jatkuvuutta varten. Identiteetti säilyy esineellä, vaikka sen julkinen merkitys, näkyvä muoto ja käyttökonteksti kehittyisivät ajan myötä.</span>
-              <span data-lang="en">Liminall is built for continuity. Identity remains with the object even as its public meaning, visible form, and use context evolve over time.</span>
-            </p>
-          </section>
-
-          <section class="content-section entry-section">
-            <h2>
-              <span data-lang="fi">Sisäänkäynnit</span>
-              <span data-lang="en">Entry paths</span>
-            </h2>
-
-            <p class="summary">
-              <span data-lang="fi">Liminall on laajempi kuin yksittäinen artefakti tai käyttötapa. Järjestelmään voi tulla sisään eri tasoilta.</span>
-              <span data-lang="en">Liminall is broader than any single artifact or use case. The system can be entered from different levels.</span>
-            </p>
-
-            <p>
-              <a class="secondary-link" href="/what/">
-                <span data-lang="fi">What Liminall Is</span>
-                <span data-lang="en">What Liminall Is</span>
-              </a>
-            </p>
-
-            <p>
-              <a class="secondary-link" href="/node/">
-                <span data-lang="fi">Node</span>
-                <span data-lang="en">Node</span>
-              </a>
-            </p>
-
-            <p>
-              <a class="secondary-link" href="/what/">
-                <span data-lang="fi">Verticals</span>
-                <span data-lang="en">Verticals</span>
-              </a>
-            </p>
-          </section>
+        <!-- HERO -->
+        <div class="hero">
+          <h1>
+            <span data-lang="fi">Pysyvä digitaalinen identiteetti fyysisille esineille.</span>
+            <span data-lang="en">Persistent digital identity for physical objects.</span>
+          </h1>
+          <p class="lead">
+            <span data-lang="fi">Identiteettikerros, joka antaa fyysisille esineille jatkuvuuden, omistajan hallinnan ja julkiset renderöinnit, jotka voivat muuttua ajan myötä.</span>
+            <span data-lang="en">An identity layer that gives physical objects continuity, owner control, and public renderings that can change over time.</span>
+          </p>
         </div>
 
-        <div class="nav-divider">
-          <nav class="site-nav" aria-label="Primary">
-            <a href="/what/">
-              <span data-lang="fi">What Liminall Is</span>
-              <span data-lang="en">What Liminall Is</span>
-            </a>
-            <a href="/node/">
-              <span data-lang="fi">Node</span>
-              <span data-lang="en">Node</span>
-            </a>
-            <a href="/what/">
-              <span data-lang="fi">Verticals</span>
-              <span data-lang="en">Verticals</span>
-            </a>
-            <a href="/support/">
-              <span data-lang="fi">Support</span>
-              <span data-lang="en">Support</span>
-            </a>
-          </nav>
+        <!-- WHAT IT IS -->
+        <div class="section">
+          <div class="sec-label">
+            <span data-lang="fi">Mikä Liminall on</span>
+            <span data-lang="en">What Liminall Is</span>
+          </div>
+          <p class="body-text">
+            <span data-lang="fi">Liminall on fyysis-digitaalinen identiteettikerros fyysisille esineille, pinnoille ja tiloille. Fyysisen maailman identiteetti-infrastruktuuri, jossa esineellä voi olla pysyvä digitaalinen identiteetti omistajan hallinnassa.</span>
+            <span data-lang="en">Liminall is a physical-digital identity layer for physical objects, surfaces, and spaces. Identity infrastructure for the physical world, where an object can hold a persistent digital identity under owner control.</span>
+          </p>
+          <p class="body-text">
+            <span data-lang="fi">Muille näkyväksi tuleva ei ole identiteetti itse vaan sen renderöinti. Renderöinti on esineen identiteetin julkinen ilmentymä — identiteetti itse säilyy sen alla.</span>
+            <span data-lang="en">What becomes visible to others is not the identity itself, but a rendering of it. A rendering is the public expression of an object's identity — the identity itself persists beneath it.</span>
+          </p>
         </div>
+
+        <!-- IDENTITY PERSISTS -->
+        <div class="section">
+          <div class="sec-label">
+            <span data-lang="fi">Pysyvyys</span>
+            <span data-lang="en">Persistence</span>
+          </div>
+          <p class="sec-heading">
+            <span data-lang="fi">Identiteetti säilyy.<br>Renderöinnit muuttuvat.</span>
+            <span data-lang="en">Identity persists.<br>Renderings change.</span>
+          </p>
+          <p class="body-text">
+            <span data-lang="fi">Fyysistä esinettä ei tarvitse sitoa yhteen pysyvään sivuun tai käyttötarkoitukseen. Sama identiteetti voi kantaa eri aikoina eri merkityksiä, näkymiä ja julkisia muotoja.</span>
+            <span data-lang="en">A physical object does not need to be bound to one fixed page or use case. The same identity can carry different meanings, views, and public forms over time.</span>
+          </p>
+          <p class="body-text">
+            <span data-lang="fi">Jatkuvuus kuuluu esineelle. Näkyvä ilmentymä voi elää sen mukana.</span>
+            <span data-lang="en">Continuity belongs to the object. Its visible expression can evolve with it.</span>
+          </p>
+        </div>
+
+        <!-- RENDERINGS -->
+        <div class="section">
+          <div class="sec-label">
+            <span data-lang="fi">Yksi identiteettikerros, useita renderöintejä</span>
+            <span data-lang="en">One identity layer, multiple renderings</span>
+          </div>
+          <p class="body-text">
+            <span data-lang="fi">Memorial, Lost &amp; Found, Collections, Branded Objects ja Signage ovat renderöintejä, jotka rakentuvat saman identiteettikerroksen päälle. Liminall ei rajoitu yhteen tuoteluokkaan tai yhteen käyttötapaan.</span>
+            <span data-lang="en">Memorial, Lost &amp; Found, Collections, Branded Objects, and Signage are renderings built on the same identity layer. Liminall is not confined to a single product category or a single use case.</span>
+          </p>
+          <div class="r-list">
+            <div class="r-row">
+              <div class="r-name">Memorial</div>
+              <p class="r-desc">
+                <span data-lang="fi">Pysyvä muistamisen ja läsnäolon renderöinti fyysisen esineen, paikan tai pinnan yhteydessä.</span>
+                <span data-lang="en">A persistent rendering for remembrance and presence around a physical object, site, or surface.</span>
+              </p>
+            </div>
+            <div class="r-row">
+              <div class="r-name">Lost &amp; Found</div>
+              <p class="r-desc">
+                <span data-lang="fi">Hallittu julkinen renderöinti palautumista ja yhteydenottoa varten ilman että koko järjestelmä supistuu pelkäksi kadonneiden tavaroiden työkaluksi.</span>
+                <span data-lang="en">A controlled public rendering for recovery and contact without reducing the system to a lost-item utility.</span>
+              </p>
+            </div>
+            <div class="r-row">
+              <div class="r-name">Collections</div>
+              <p class="r-desc">
+                <span data-lang="fi">Tapa liittää useita esineitä yhteen yhteisen identiteettirakenteen, järjestyksen, provenienssin ja jatkuvuuden kautta.</span>
+                <span data-lang="en">A way to connect multiple objects through shared identity structure, sequence, provenance, and continuity.</span>
+              </p>
+            </div>
+            <div class="r-row">
+              <div class="r-name">Branded Objects</div>
+              <p class="r-desc">
+                <span data-lang="fi">Brändin hallitsema fyysis-digitaalinen pinta tuotteille, erille, pakkauksille ja pitkäikäisille fyysisille kohtaamispisteille.</span>
+                <span data-lang="en">A brand-controlled physical-digital surface for products, editions, packaging, and long-lived physical touchpoints.</span>
+              </p>
+            </div>
+            <div class="r-row">
+              <div class="r-name">Signage</div>
+              <p class="r-desc">
+                <span data-lang="fi">Kestävä identiteettipinta julkisille tauluille, opasteille ja informatiivisille fyysisille kohteille.</span>
+                <span data-lang="en">A durable identity surface for public boards, signage, and informational physical objects.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NODE -->
+        <div class="section">
+          <div class="sec-label">Node</div>
+          <p class="body-text">
+            <span data-lang="fi">Node on yksi fyysinen pääsyartefakti Liminall-järjestelmässä. Se antaa fyysiselle esineelle konkreettisen kosketuspisteen sen identiteettikerrokseen.</span>
+            <span data-lang="en">Node is one physical access artifact within the Liminall system. It gives a physical object a concrete touchpoint into its identity layer.</span>
+          </p>
+          <p class="body-text">
+            <span data-lang="fi">Node ei ole identiteetti itse, eikä se ole koko järjestelmä. Se on yksi tapa, jolla identiteetistä tulee fyysisesti saavutettava.</span>
+            <span data-lang="en">Node is not the identity itself, and it is not the whole system. It is one way identity becomes physically reachable.</span>
+          </p>
+        </div>
+
+        <!-- ENTRY PATHS -->
+        <div class="section" style="border-bottom: none; padding-bottom: 0;">
+          <div class="sec-label">
+            <span data-lang="fi">Sisäänkäynnit</span>
+            <span data-lang="en">Entry paths</span>
+          </div>
+          <p class="body-text">
+            <span data-lang="fi">Liminall on laajempi kuin yksittäinen artefakti tai käyttötapa. Järjestelmään voi tulla sisään eri tasoilta.</span>
+            <span data-lang="en">Liminall is broader than any single artifact or use case. The system can be entered from different levels.</span>
+          </p>
+          <div class="entries">
+            <a class="entry-link" href="/what/">
+              <span class="entry-tag">
+                <span data-lang="fi">Konsepti</span>
+                <span data-lang="en">Concept</span>
+              </span>
+              <span class="entry-title">What Liminall Is</span>
+            </a>
+            <a class="entry-link" href="/node/">
+              <span class="entry-tag">
+                <span data-lang="fi">Tuote</span>
+                <span data-lang="en">Product</span>
+              </span>
+              <span class="entry-title">Node</span>
+            </a>
+            <a class="entry-link" href="/what/">
+              <span class="entry-tag">
+                <span data-lang="fi">Sovellusalueet</span>
+                <span data-lang="en">Use cases</span>
+              </span>
+              <span class="entry-title">Verticals</span>
+            </a>
+          </div>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/what/">
+            <span data-lang="fi">What Liminall Is</span>
+            <span data-lang="en">What Liminall Is</span>
+          </a>
+          <a href="/node/">Node</a>
+          <a href="/what/">Verticals</a>
+          <a href="/support/">
+            <span data-lang="fi">Tuki</span>
+            <span data-lang="en">Support</span>
+          </a>
+        </nav>
+
       </main>
     </div>
   </div>
@@ -333,21 +253,13 @@
   <script>
     const root = document.documentElement;
     const buttons = document.querySelectorAll("[data-set-lang]");
-
     function setLang(lang) {
       root.lang = lang;
       root.dataset.lang = lang;
-
-      buttons.forEach((button) => {
-        button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
-      });
+      buttons.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)));
     }
-
     setLang("fi");
-
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => setLang(button.dataset.setLang));
-    });
+    buttons.forEach(b => b.addEventListener("click", () => setLang(b.dataset.setLang)));
   </script>
 </body>
 </html>
