@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liminall | Kiitos</title>
-  <meta name="description" content="Kiitos tilauksesta. Liminall Node DIY Kit -tilaus käsitellään maksun jälkeen ja Node provisionoidaan ennen lähetystä.">
+  <title>Liminall | Kiitos tilauksesta</title>
+  <meta name="description" content="Kiitos tilauksesta. Node provisionoidaan ennen lähetystä — tunnisteet ohjelmoidaan yksilöllisesti valmiiksi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -18,80 +21,81 @@
   <div class="page-shell">
     <div class="page">
       <main class="panel">
+
         <div class="panel-top">
           <a class="mark" href="/" aria-label="Liminall">
             <img src="/images/logo.svg" alt="Liminall">
           </a>
-
           <div class="lang-switch" aria-label="Language switch">
             <button type="button" data-set-lang="fi" aria-pressed="true">FI</button>
             <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
           </div>
         </div>
 
-        <div class="hero-copy">
+        <div class="hero">
           <h1>
-            <span data-lang="fi">Kiitos</span>
-            <span data-lang="en">Thank you</span>
+            <span data-lang="fi">Kiitos.</span>
+            <span data-lang="en">Thank you.</span>
           </h1>
-
-          <p class="success-note">
-            <span data-lang="fi">Tilaus käsitellään maksun jälkeen.</span>
-            <span data-lang="en">The order is processed after payment.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Node provisionoidaan ennen lähetystä. Tämä tarkoittaa, että tunnisteet ohjelmoidaan valmiiksi ennen toimitusta.</span>
-            <span data-lang="en">The Node is provisioned before shipping. This means the tags are programmed before delivery.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Paketti sisältää kaksi ohjelmoitua tunnistetta: julkisen Node-tagin ja omistajan hallinta-avaimen.</span>
-            <span data-lang="en">The package includes two programmed tags: a public Node tag and an owner control tag.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Julkinen tagi avaa objektin identiteetin. Omistajan hallinta-avain avaa hallinta- ja omistajapääsyn.</span>
-            <span data-lang="en">The public tag opens the object identity. The owner control tag opens control and owner access.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Sovellusta tai kirjautumista ei tarvita.</span>
-            <span data-lang="en">No app or login is needed.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Jos jokin jää epäselväksi, ota yhteyttä: <a href="mailto:hello@liminall.fi">hello@liminall.fi</a></span>
-            <span data-lang="en">If anything is unclear, contact <a href="mailto:hello@liminall.fi">hello@liminall.fi</a></span>
-          </p>
-
-          <p>
-            <a class="secondary-link" href="/node/">
-              <span data-lang="fi">Takaisin Node-sivulle</span>
-              <span data-lang="en">Back to the Node page</span>
-            </a>
-          </p>
-
-          <p>
-            <a class="secondary-link" href="/">
-              <span data-lang="fi">Takaisin etusivulle</span>
-              <span data-lang="en">Back to home</span>
-            </a>
+          <p class="lead">
+            <span data-lang="fi">Tilauksesi on vastaanotettu. Node tulee sinulle.</span>
+            <span data-lang="en">Your order has been received. Node is coming to you.</span>
           </p>
         </div>
 
+        <div class="section">
+          <div class="sec-label">
+            <span data-lang="fi">Mitä tapahtuu seuraavaksi</span>
+            <span data-lang="en">What happens next</span>
+          </div>
+          <p class="body-text">
+            <span data-lang="fi">Tilaus käsitellään maksun jälkeen. Node provisionoidaan ennen lähetystä — tunnisteet ohjelmoidaan yksilöllisesti valmiiksi juuri sinun nodeasi varten.</span>
+            <span data-lang="en">The order is processed after payment. The Node is provisioned before shipping — the tags are programmed individually, specifically for your Node.</span>
+          </p>
+          <p class="body-text">
+            <span data-lang="fi">Paketti sisältää kaksi tunnistetta. Julkinen tagi on se, jonka kiinnität esineeseen — kuka tahansa voi koskettaa sitä. Hallinta-avain on se, jonka pidät itsellä. Se on ainoa pääsysi Noden identiteettiin. Älä menetä sitä.</span>
+            <span data-lang="en">The package includes two tags. The public tag is the one you attach to the object — anyone can touch it. The control key is the one you keep. It is your only access to the Node's identity. Don't lose it.</span>
+          </p>
+        </div>
+
+        <div class="section" style="border-bottom: none; padding-bottom: 0;">
+          <div class="sec-label">
+            <span data-lang="fi">Kysyttävää?</span>
+            <span data-lang="en">Questions?</span>
+          </div>
+          <p class="body-text">
+            <span data-lang="fi">Jos jokin jää epäselväksi, ota yhteyttä: <a href="mailto:hello@liminall.fi">hello@liminall.fi</a></span>
+            <span data-lang="en">If anything is unclear, contact us: <a href="mailto:hello@liminall.fi">hello@liminall.fi</a></span>
+          </p>
+          <div class="entries">
+            <a class="entry-link" href="/node/">
+              <span class="entry-tag">
+                <span data-lang="fi">Tuotesivu</span>
+                <span data-lang="en">Product</span>
+              </span>
+              <span class="entry-title">
+                <span data-lang="fi">Node — lisätiedot</span>
+                <span data-lang="en">Node — more details</span>
+              </span>
+            </a>
+            <a class="entry-link" href="/support/">
+              <span class="entry-tag">
+                <span data-lang="fi">Apua</span>
+                <span data-lang="en">Help</span>
+              </span>
+              <span class="entry-title">
+                <span data-lang="fi">Tuki</span>
+                <span data-lang="en">Support</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
         <nav class="site-nav" aria-label="Primary">
-          <a href="/">
-            <span data-lang="fi">Etusivu</span>
-            <span data-lang="en">Home</span>
-          </a>
+          <a href="/node/">Node</a>
           <a href="/what/">
-            <span data-lang="fi">Mikä tämä on</span>
-            <span data-lang="en">What is this</span>
-          </a>
-          <a href="/node/">
-            <span data-lang="fi">Node</span>
-            <span data-lang="en">Node</span>
+            <span data-lang="fi">Mikä Node on</span>
+            <span data-lang="en">What Node Is</span>
           </a>
           <a href="/support/">
             <span data-lang="fi">Tuki</span>
@@ -102,6 +106,7 @@
             <span data-lang="en">Terms</span>
           </a>
         </nav>
+
       </main>
     </div>
   </div>
@@ -109,20 +114,13 @@
   <script>
     const root = document.documentElement;
     const buttons = document.querySelectorAll("[data-set-lang]");
-
     function setLang(lang) {
       root.lang = lang;
       root.dataset.lang = lang;
-      buttons.forEach((button) => {
-        button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
-      });
+      buttons.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)));
     }
-
     setLang("fi");
-
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => setLang(button.dataset.setLang));
-    });
+    buttons.forEach(b => b.addEventListener("click", () => setLang(b.dataset.setLang)));
   </script>
 </body>
 </html>

@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liminall | Persistent Digital Identity for Physical Objects</title>
-  <meta
-    name="description"
-    content="Liminall is a physical-digital identity layer for physical objects, surfaces, and spaces. Identity persists while public renderings change over time under owner control."
-  >
+  <title>Liminall | Node — Pysyvä digitaalinen identiteetti fyysisille esineille</title>
+  <meta name="description" content="Node antaa fyysiselle esineelle pysyvän digitaalisen identiteetin. Kosketus puhelimella avaa sen — ilman sovellusta, ilman kirjautumista.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://liminall.fi/">
-  <meta property="og:title" content="Liminall | Persistent Digital Identity for Physical Objects">
-  <meta property="og:description" content="Liminall is a physical-digital identity layer for physical objects, surfaces, and spaces. Identity persists while public renderings change over time under owner control.">
+  <meta property="og:title" content="Liminall | Node — Pysyvä digitaalinen identiteetti fyysisille esineille">
+  <meta property="og:description" content="Node antaa fyysiselle esineelle pysyvän digitaalisen identiteetin. Kosketus puhelimella avaa sen — ilman sovellusta, ilman kirjautumista.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Liminall | Persistent Digital Identity for Physical Objects">
-  <meta name="twitter:description" content="Liminall is a physical-digital identity layer for physical objects, surfaces, and spaces. Identity persists while public renderings change over time under owner control.">
+  <meta name="twitter:title" content="Liminall | Node">
+  <meta name="twitter:description" content="Node antaa fyysiselle esineelle pysyvän digitaalisen identiteetin. Kosketus puhelimella avaa sen.">
   <link rel="canonical" href="https://liminall.fi/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -34,7 +34,7 @@
           "name": "Liminall",
           "url": "https://liminall.fi/",
           "logo": "https://liminall.fi/images/logo.svg",
-          "description": "Liminall is a physical-digital identity layer for physical objects, surfaces, and spaces."
+          "description": "Liminall on fyysis-digitaalinen identiteetti-infrastruktuuri fyysisille esineille."
         },
         {
           "@type": "WebSite",
@@ -45,21 +45,17 @@
           "inLanguage": ["fi", "en"]
         },
         {
-          "@type": "WebPage",
-          "@id": "https://liminall.fi/#webpage",
-          "url": "https://liminall.fi/",
-          "name": "Liminall | Persistent Digital Identity for Physical Objects",
-          "isPartOf": { "@id": "https://liminall.fi/#website" },
-          "about": { "@id": "https://liminall.fi/#organization" },
-          "description": "Liminall is a physical-digital identity layer for physical objects, surfaces, and spaces. Identity persists while public renderings change over time under owner control.",
-          "inLanguage": ["fi", "en"],
-          "mainEntity": {
-            "@type": "Service",
-            "@id": "https://liminall.fi/#service",
-            "name": "Liminall Identity Infrastructure",
-            "provider": { "@id": "https://liminall.fi/#organization" },
-            "serviceType": "Physical-digital identity infrastructure",
-            "description": "Persistent digital identity infrastructure for physical objects, surfaces, and spaces."
+          "@type": "Product",
+          "@id": "https://liminall.fi/#node",
+          "name": "Liminall Node",
+          "brand": { "@id": "https://liminall.fi/#organization" },
+          "description": "NFC-pohjainen fyysinen tunniste, joka antaa esineelle pysyvän digitaalisen identiteetin.",
+          "offers": {
+            "@type": "Offer",
+            "price": "20",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://liminall.fi/buy/"
           }
         }
       ]
@@ -88,125 +84,107 @@
           </div>
         </div>
 
-        <!-- HERO -->
         <div class="hero">
           <h1>
-            <span data-lang="fi">Pysyvä digitaalinen identiteetti fyysisille esineille.</span>
-            <span data-lang="en">Persistent digital identity for physical objects.</span>
+            <span data-lang="fi">Kaikilla esineillä on historia.<br>Node antaa sille äänen.</span>
+            <span data-lang="en">Every object has a history.<br>Node gives it a voice.</span>
           </h1>
           <p class="lead">
-            <span data-lang="fi">Identiteettikerros, joka antaa fyysisille esineille jatkuvuuden, omistajan hallinnan ja julkiset renderöinnit, jotka voivat muuttua ajan myötä.</span>
-            <span data-lang="en">An identity layer that gives physical objects continuity, owner control, and public renderings that can change over time.</span>
+            <span data-lang="fi">Node on fyysinen tunniste, joka antaa esineelle pysyvän digitaalisen identiteetin — omistajan hallinnassa, puhelimen kosketuksella avattavissa. Ei sovellusta. Ei kirjautumista.</span>
+            <span data-lang="en">Node is a physical identifier that gives an object a persistent digital identity — owner-controlled, opened with a phone touch. No app. No login.</span>
           </p>
         </div>
 
-        <!-- WHAT IT IS -->
         <div class="section">
           <div class="sec-label">
-            <span data-lang="fi">Mikä Liminall on</span>
-            <span data-lang="en">What Liminall Is</span>
+            <span data-lang="fi">Mikä Node on</span>
+            <span data-lang="en">What Node Is</span>
           </div>
           <p class="body-text">
-            <span data-lang="fi">Liminall on fyysis-digitaalinen identiteettikerros fyysisille esineille, pinnoille ja tiloille. Fyysisen maailman identiteetti-infrastruktuuri, jossa esineellä voi olla pysyvä digitaalinen identiteetti omistajan hallinnassa.</span>
-            <span data-lang="en">Liminall is a physical-digital identity layer for physical objects, surfaces, and spaces. Identity infrastructure for the physical world, where an object can hold a persistent digital identity under owner control.</span>
+            <span data-lang="fi">Node on NFC-pohjainen fyysinen tunniste. Passiivinen artefakti — ei akkua, ei verkkoyhteyttä, ei prosessoria. Se kiinnitetään esineeseen, pintaan tai tilaan ja herää ainoastaan kun puhelin koskettaa sitä.</span>
+            <span data-lang="en">Node is an NFC-based physical identifier. A passive artifact — no battery, no network, no processor. It attaches to an object, surface, or space and activates only when a phone comes close.</span>
           </p>
           <p class="body-text">
-            <span data-lang="fi">Muille näkyväksi tuleva ei ole identiteetti itse vaan sen renderöinti. Renderöinti on esineen identiteetin julkinen ilmentymä — identiteetti itse säilyy sen alla.</span>
-            <span data-lang="en">What becomes visible to others is not the identity itself, but a rendering of it. A rendering is the public expression of an object's identity — the identity itself persists beneath it.</span>
+            <span data-lang="fi">Kosketus avaa digitaalisen identiteetin. Omistaja määrittää, mitä avautuu. Identiteetti säilyy — se mitä se näyttää voi muuttua.</span>
+            <span data-lang="en">Touch opens a digital identity. The owner defines what opens. The identity persists — what it shows can change.</span>
           </p>
         </div>
 
-        <!-- IDENTITY PERSISTS -->
         <div class="section">
           <div class="sec-label">
             <span data-lang="fi">Pysyvyys</span>
             <span data-lang="en">Persistence</span>
           </div>
           <p class="sec-heading">
-            <span data-lang="fi">Identiteetti säilyy.<br>Renderöinnit muuttuvat.</span>
-            <span data-lang="en">Identity persists.<br>Renderings change.</span>
+            <span data-lang="fi">Sama Node.<br>Eri merkitys.<br>Eri aikoina.</span>
+            <span data-lang="en">Same Node.<br>Different meaning.<br>Different times.</span>
           </p>
           <p class="body-text">
-            <span data-lang="fi">Fyysistä esinettä ei tarvitse sitoa yhteen pysyvään sivuun tai käyttötarkoitukseen. Sama identiteetti voi kantaa eri aikoina eri merkityksiä, näkymiä ja julkisia muotoja.</span>
-            <span data-lang="en">A physical object does not need to be bound to one fixed page or use case. The same identity can carry different meanings, views, and public forms over time.</span>
+            <span data-lang="fi">Node ei sido esinettä yhteen viestiin tai yhteen käyttötarkoitukseen. Sama tunniste voi toimia tänään yhteystietosivuna, huomenna muistosivuna, ensi vuonna kokoelman osana.</span>
+            <span data-lang="en">Node doesn't bind an object to one message or one use case. The same tag can work today as a contact page, tomorrow as a memorial, next year as part of a collection.</span>
           </p>
           <p class="body-text">
-            <span data-lang="fi">Jatkuvuus kuuluu esineelle. Näkyvä ilmentymä voi elää sen mukana.</span>
-            <span data-lang="en">Continuity belongs to the object. Its visible expression can evolve with it.</span>
+            <span data-lang="fi">Fyysiset esineet kestävät yleensä kauemmin kuin niiden ympärille rakennetut digitaaliset kerrokset. Node on rakennettu samalle kestävyydelle.</span>
+            <span data-lang="en">Physical objects usually outlast the digital layers built around them. Node is built for the same durability.</span>
           </p>
         </div>
 
-        <!-- RENDERINGS -->
         <div class="section">
           <div class="sec-label">
-            <span data-lang="fi">Yksi identiteettikerros, useita renderöintejä</span>
-            <span data-lang="en">One identity layer, multiple renderings</span>
+            <span data-lang="fi">Käyttötapaukset</span>
+            <span data-lang="en">Use cases</span>
           </div>
           <p class="body-text">
-            <span data-lang="fi">Memorial, Lost &amp; Found, Collections, Branded Objects ja Signage ovat renderöintejä, jotka rakentuvat saman identiteettikerroksen päälle. Liminall ei rajoitu yhteen tuoteluokkaan tai yhteen käyttötapaan.</span>
-            <span data-lang="en">Memorial, Lost &amp; Found, Collections, Branded Objects, and Signage are renderings built on the same identity layer. Liminall is not confined to a single product category or a single use case.</span>
+            <span data-lang="fi">Node toimii kaikkialla, missä fyysisellä esineellä on merkitys, jonka haluaa tehdä jaettavaksi — henkilökohtaisessa elämässä ja liiketoiminnassa.</span>
+            <span data-lang="en">Node works anywhere a physical object carries meaning worth sharing — in personal life and in business.</span>
           </p>
           <div class="r-list">
             <div class="r-row">
               <div class="r-name">Memorial</div>
               <p class="r-desc">
-                <span data-lang="fi">Pysyvä muistamisen ja läsnäolon renderöinti fyysisen esineen, paikan tai pinnan yhteydessä.</span>
-                <span data-lang="en">A persistent rendering for remembrance and presence around a physical object, site, or surface.</span>
+                <span data-lang="fi">Muistoesine, hauta, paikka, taideteos. Node tekee siitä kosketettavan muistamisen paikan, jota voi täydentää ajan myötä.</span>
+                <span data-lang="en">A keepsake, grave, place, artwork. Node makes it a touchable place of remembrance that can grow over time.</span>
               </p>
             </div>
             <div class="r-row">
               <div class="r-name">Lost &amp; Found</div>
               <p class="r-desc">
-                <span data-lang="fi">Hallittu julkinen renderöinti palautumista ja yhteydenottoa varten ilman että koko järjestelmä supistuu pelkäksi kadonneiden tavaroiden työkaluksi.</span>
-                <span data-lang="en">A controlled public rendering for recovery and contact without reducing the system to a lost-item utility.</span>
+                <span data-lang="fi">Avaimet, laukku, lemmikin kaulapanta. Node kertoo löytäjälle kenen se on ja miten palauttaa — ilman että yhteystiedot ovat julkisesti näkyvillä.</span>
+                <span data-lang="en">Keys, luggage, a pet's collar. Node tells the finder whose it is and how to return it — without exposing your contact details publicly.</span>
               </p>
             </div>
             <div class="r-row">
               <div class="r-name">Collections</div>
               <p class="r-desc">
-                <span data-lang="fi">Tapa liittää useita esineitä yhteen yhteisen identiteettirakenteen, järjestyksen, provenienssin ja jatkuvuuden kautta.</span>
-                <span data-lang="en">A way to connect multiple objects through shared identity structure, sequence, provenance, and continuity.</span>
+                <span data-lang="fi">Taideteos, painos, harvinaisuus. Node liittää esineen provenienssiinsa, tarinaansa ja omistajuuteensa.</span>
+                <span data-lang="en">An artwork, edition, rarity. Node connects an object to its provenance, story, and ownership chain.</span>
               </p>
             </div>
             <div class="r-row">
               <div class="r-name">Branded Objects</div>
               <p class="r-desc">
-                <span data-lang="fi">Brändin hallitsema fyysis-digitaalinen pinta tuotteille, erille, pakkauksille ja pitkäikäisille fyysisille kohtaamispisteille.</span>
-                <span data-lang="en">A brand-controlled physical-digital surface for products, editions, packaging, and long-lived physical touchpoints.</span>
+                <span data-lang="fi">Tuote, pakkaus, rajoitettu erä. Node on brändin hallitsema fyysis-digitaalinen pinta, joka elää tuotteen koko elinkaaren ajan.</span>
+                <span data-lang="en">A product, package, limited edition. Node is a brand-controlled physical-digital surface that lives through the entire product lifecycle.</span>
               </p>
             </div>
             <div class="r-row">
               <div class="r-name">Signage</div>
               <p class="r-desc">
-                <span data-lang="fi">Kestävä identiteettipinta julkisille tauluille, opasteille ja informatiivisille fyysisille kohteille.</span>
-                <span data-lang="en">A durable identity surface for public boards, signage, and informational physical objects.</span>
+                <span data-lang="fi">Julkinen taulu, opaste, tila. Node tekee fyysisestä pinnasta päivitettävän digitaalisen kerroksen ilman vaihtotarvetta.</span>
+                <span data-lang="en">A public board, sign, space. Node turns a physical surface into an updatable digital layer without replacement.</span>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- NODE -->
-        <div class="section">
-          <div class="sec-label">Node</div>
-          <p class="body-text">
-            <span data-lang="fi">Node on yksi fyysinen pääsyartefakti Liminall-järjestelmässä. Se antaa fyysiselle esineelle konkreettisen kosketuspisteen sen identiteettikerrokseen.</span>
-            <span data-lang="en">Node is one physical access artifact within the Liminall system. It gives a physical object a concrete touchpoint into its identity layer.</span>
-          </p>
-          <p class="body-text">
-            <span data-lang="fi">Node ei ole identiteetti itse, eikä se ole koko järjestelmä. Se on yksi tapa, jolla identiteetistä tulee fyysisesti saavutettava.</span>
-            <span data-lang="en">Node is not the identity itself, and it is not the whole system. It is one way identity becomes physically reachable.</span>
-          </p>
-        </div>
-
-        <!-- ENTRY PATHS -->
         <div class="section" style="border-bottom: none; padding-bottom: 0;">
           <div class="sec-label">
-            <span data-lang="fi">Sisäänkäynnit</span>
-            <span data-lang="en">Entry paths</span>
+            <span data-lang="fi">Aloita tästä</span>
+            <span data-lang="en">Start here</span>
           </div>
           <p class="body-text">
-            <span data-lang="fi">Liminall on laajempi kuin yksittäinen artefakti tai käyttötapa. Järjestelmään voi tulla sisään eri tasoilta.</span>
-            <span data-lang="en">Liminall is broader than any single artifact or use case. The system can be entered from different levels.</span>
+            <span data-lang="fi">Node on yksinkertainen tuote. Merkitys on siinä, mitä sen päälle rakentaa.</span>
+            <span data-lang="en">Node is a simple product. The meaning is in what you build on top of it.</span>
           </p>
           <div class="entries">
             <a class="entry-link" href="/what/">
@@ -214,35 +192,34 @@
                 <span data-lang="fi">Konsepti</span>
                 <span data-lang="en">Concept</span>
               </span>
-              <span class="entry-title">What Liminall Is</span>
+              <span class="entry-title">
+                <span data-lang="fi">Mikä Node on</span>
+                <span data-lang="en">What Node Is</span>
+              </span>
             </a>
             <a class="entry-link" href="/node/">
               <span class="entry-tag">
                 <span data-lang="fi">Tuote</span>
                 <span data-lang="en">Product</span>
               </span>
-              <span class="entry-title">Node</span>
-            </a>
-            <a class="entry-link" href="/what/">
-              <span class="entry-tag">
-                <span data-lang="fi">Sovellusalueet</span>
-                <span data-lang="en">Use cases</span>
-              </span>
-              <span class="entry-title">Verticals</span>
+              <span class="entry-title">Node DIY Kit — 20 €</span>
             </a>
           </div>
         </div>
 
         <nav class="site-nav" aria-label="Primary">
-          <a href="/what/">
-            <span data-lang="fi">What Liminall Is</span>
-            <span data-lang="en">What Liminall Is</span>
-          </a>
           <a href="/node/">Node</a>
-          <a href="/what/">Verticals</a>
+          <a href="/what/">
+            <span data-lang="fi">Mikä Node on</span>
+            <span data-lang="en">What Node Is</span>
+          </a>
           <a href="/support/">
             <span data-lang="fi">Tuki</span>
             <span data-lang="en">Support</span>
+          </a>
+          <a href="/terms/">
+            <span data-lang="fi">Ehdot</span>
+            <span data-lang="en">Terms</span>
           </a>
         </nav>
 

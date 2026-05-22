@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liminall | Tuki</title>
-  <meta
-    name="description"
-    content="Ohjeet Liminall Node -tunnisteen käyttöön ja ongelmatilanteisiin."
-  >
+  <meta name="description" content="Apua Liminall Noden käyttöön. NFC-vianetsintä, yhteensopivuus ja yhteydenotot.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -21,86 +21,121 @@
   <div class="page-shell">
     <div class="page">
       <main class="panel">
+
         <div class="panel-top">
           <a class="mark" href="/" aria-label="Liminall">
             <img src="/images/logo.svg" alt="Liminall">
           </a>
-
           <div class="lang-switch" aria-label="Language switch">
             <button type="button" data-set-lang="fi" aria-pressed="true">FI</button>
             <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
           </div>
         </div>
 
-        <div class="hero-copy">
+        <div class="hero">
           <h1>
             <span data-lang="fi">Tuki</span>
             <span data-lang="en">Support</span>
           </h1>
-
-          <p class="summary">
-            <span data-lang="fi">Eikö tunniste avaudu?</span>
-            <span data-lang="en">Does the tag not open?</span>
+          <p class="lead">
+            <span data-lang="fi">Useimmat ongelmat ratkeavat kahdessa minuutissa. Tässä miten.</span>
+            <span data-lang="en">Most issues resolve in two minutes. Here's how.</span>
           </p>
+        </div>
 
-          <p class="summary">
-            <span data-lang="fi">Varmista, että NFC on päällä puhelimessa. Pidä puhelinta hitaasti tunnisteen päällä - lukukohta vaihtelee mallien välillä.</span>
-            <span data-lang="en">Make sure NFC is enabled on your phone. Hold the phone slowly over the tag - the reading position varies between models.</span>
+        <div class="section">
+          <div class="sec-label">
+            <span data-lang="fi">Tunniste ei avaudu</span>
+            <span data-lang="en">Tag not opening</span>
+          </div>
+          <p class="body-text">
+            <span data-lang="fi">Yleisin syy ei ole rikkinäinen tunniste — se on lukukohta tai NFC-asetus. Tunniste on passiivinen: se ei voi hajota ilman fyysistä vauriota.</span>
+            <span data-lang="en">The most common reason is not a broken tag — it's the reading position or an NFC setting. The tag is passive: it cannot fail without physical damage.</span>
           </p>
+          <div class="r-list">
+            <div class="r-row">
+              <div class="r-name">
+                <span data-lang="fi">NFC päällä?</span>
+                <span data-lang="en">NFC on?</span>
+              </div>
+              <p class="r-desc">
+                <span data-lang="fi">Varmista asetuksista että NFC on käytössä. Jos puhelin tukee mobiilimaksua, siinä on NFC.</span>
+                <span data-lang="en">Check settings to confirm NFC is enabled. If the phone supports mobile payments, it has NFC.</span>
+              </p>
+            </div>
+            <div class="r-row">
+              <div class="r-name">
+                <span data-lang="fi">Lukukohta</span>
+                <span data-lang="en">Reading point</span>
+              </div>
+              <p class="r-desc">
+                <span data-lang="fi">NFC luetaan puhelimen tietystä kohdasta. iPhonessa se on yleensä yläreuna, Androidissa takakannen keskiosa tai kameran alapuoli. Liikuta puhelinta hitaasti tunnisteen päällä.</span>
+                <span data-lang="en">NFC is read from a specific point on the phone. On iPhone it's usually near the top edge, on Android around the center of the back or below the camera. Move the phone slowly over the tag.</span>
+              </p>
+            </div>
+            <div class="r-row">
+              <div class="r-name">
+                <span data-lang="fi">Suojakuori</span>
+                <span data-lang="en">Phone case</span>
+              </div>
+              <p class="r-desc">
+                <span data-lang="fi">Paksu suojakuori tai metalliset osat voivat estää lukemisen. Poista kuori ja kokeile uudelleen.</span>
+                <span data-lang="en">A thick case or metal components can block reading. Remove the case and try again.</span>
+              </p>
+            </div>
+          </div>
+        </div>
 
-          <p class="summary">
-            <span data-lang="fi">Toimiiko puhelimeni?</span>
-            <span data-lang="en">Will my phone work?</span>
+        <div class="section">
+          <div class="sec-label">
+            <span data-lang="fi">Toimiiko puhelimeni</span>
+            <span data-lang="en">Will my phone work</span>
+          </div>
+          <div class="r-list">
+            <div class="r-row">
+              <div class="r-name">iPhone</div>
+              <p class="r-desc">
+                <span data-lang="fi">iPhone 7 tai uudempi — kyllä. Natiivi tuki käyttöjärjestelmätasolla.</span>
+                <span data-lang="en">iPhone 7 or newer — yes. Native support at the OS level.</span>
+              </p>
+            </div>
+            <div class="r-row">
+              <div class="r-name">Android</div>
+              <p class="r-desc">
+                <span data-lang="fi">Useimmat Android-laitteet 2016 eteenpäin — kyllä. Jos puhelimessa on mobiilimaksu, siinä on NFC.</span>
+                <span data-lang="en">Most Android devices from 2016 onward — yes. If the phone supports mobile payments, it has NFC.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="sec-label">
+            <span data-lang="fi">Tunniste näyttää virheen</span>
+            <span data-lang="en">Tag shows an error</span>
+          </div>
+          <p class="body-text">
+            <span data-lang="fi">Jos tunniste avautuu mutta sivu ei lataudu oikein, järjestelmä ei tavoita oikeaa tietoa. Ota yhteyttä — selvitämme tilanteen.</span>
+            <span data-lang="en">If the tag opens but the page doesn't load correctly, the system is not reaching the right information. Contact us — we'll sort it out.</span>
           </p>
+        </div>
 
-          <p class="summary">
-            <span data-lang="fi">iPhone 7 tai uudempi - kyllä. Android 2016 tai uudempi - yleensä kyllä. Jos puhelimessa on mobiilimaksaminen, siinä on NFC.</span>
-            <span data-lang="en">iPhone 7 or newer - yes. Android from 2016 or newer - usually yes. If the phone supports mobile payments, it has NFC.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Yleisin syy siihen, ettei tunniste avaudu, ei ole rikkinäinen tunniste vaan lukukohta tai asetus.</span>
-            <span data-lang="en">The most common reason a tag does not open is not a broken tag, but the reading position or a setting.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">NFC luetaan puhelimen tietystä kohdasta. iPhonessa se on yleensä yläreuna, Androidissa takakannen keskiosa tai kameran alapuoli.</span>
-            <span data-lang="en">NFC is read from a specific point on the phone. On iPhone it is usually near the top edge, on Android around the center of the back or below the camera.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Paksu suojakuori tai metalli voi estää lukemisen. Poista kuori ja kokeile uudelleen.</span>
-            <span data-lang="en">A thick case or metal can block the reading. Remove the case and try again.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Jos puhelin ei reagoi lainkaan, tarkista asetuksista, että NFC on käytössä.</span>
-            <span data-lang="en">If the phone does not react at all, check that NFC is enabled in settings.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Jos tunniste näyttää virheen, sivu ei juuri nyt tavoita oikeaa tietoa. Tässä tilanteessa ota yhteyttä.</span>
-            <span data-lang="en">If the tag shows an error, the page is not reaching the correct information right now. In that case, contact us.</span>
-          </p>
-
-          <p class="summary">
-            <span data-lang="fi">Muuta kysyttävää? hello@liminall.fi</span>
-            <span data-lang="en">Other questions? hello@liminall.fi</span>
+        <div class="section" style="border-bottom: none; padding-bottom: 0;">
+          <div class="sec-label">
+            <span data-lang="fi">Muuta kysyttävää</span>
+            <span data-lang="en">Other questions</span>
+          </div>
+          <p class="body-text">
+            <span data-lang="fi"><a href="mailto:hello@liminall.fi">hello@liminall.fi</a></span>
+            <span data-lang="en"><a href="mailto:hello@liminall.fi">hello@liminall.fi</a></span>
           </p>
         </div>
 
         <nav class="site-nav" aria-label="Primary">
-          <a href="/">
-            <span data-lang="fi">Etusivu</span>
-            <span data-lang="en">Home</span>
-          </a>
+          <a href="/node/">Node</a>
           <a href="/what/">
-            <span data-lang="fi">Mikä tämä on</span>
-            <span data-lang="en">What is this</span>
-          </a>
-          <a href="/node/">
-            <span data-lang="fi">Node</span>
-            <span data-lang="en">Node</span>
+            <span data-lang="fi">Mikä Node on</span>
+            <span data-lang="en">What Node Is</span>
           </a>
           <a href="/support/">
             <span data-lang="fi">Tuki</span>
@@ -111,6 +146,7 @@
             <span data-lang="en">Terms</span>
           </a>
         </nav>
+
       </main>
     </div>
   </div>
@@ -118,20 +154,13 @@
   <script>
     const root = document.documentElement;
     const buttons = document.querySelectorAll("[data-set-lang]");
-
     function setLang(lang) {
       root.lang = lang;
       root.dataset.lang = lang;
-      buttons.forEach((button) => {
-        button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
-      });
+      buttons.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)));
     }
-
     setLang("fi");
-
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => setLang(button.dataset.setLang));
-    });
+    buttons.forEach(b => b.addEventListener("click", () => setLang(b.dataset.setLang)));
   </script>
 </body>
 </html>
